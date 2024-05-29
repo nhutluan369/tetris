@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="571.0" style="-fx-background-color: #916F6F; -fx-background-radius: 60;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newfxproject.Tetris">
+   <children>
+      <VBox layoutX="136.0" layoutY="83.93310546875">
+         <children>
+            <Text fx:id="text" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Sử dụng phím:" wrappingWidth="273.9140625">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="↑: xoay gạch" wrappingWidth="95.44873046875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="↓: tăng tốc độ rơi" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text=" ← → de di chuyen qua lai" />
+         </children>
+      </VBox>
+      <VBox layoutX="133.0" layoutY="169.93310546875">
+         <children>
+            <Text strokeType="INSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Cách tính điểm " wrappingWidth="147.6748046875">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" />
+               </effect>
+            </Text>
+            <Text strokeType="INSIDE" strokeWidth="0.0" text="Mỗi hàng hoàn thành +30 " wrappingWidth="228.6748046875" />
+            <Text strokeType="INSIDE" strokeWidth="0.0" text="Tối đa 4 hàng hoàn thành cùng lúc với khối chữ I " wrappingWidth="360.6748046875" />
+         </children>
+      </VBox>
+      <VBox layoutX="133.0" layoutY="249.0">
+         <children>
+            <Text strokeType="INSIDE" strokeWidth="0.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Kết thúc :" wrappingWidth="360.6748046875">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Text>
+            <Text strokeType="INSIDE" strokeWidth="0.0" text="Kết thúc khi lượng gạch đã rơi xuống chồng chất lên đến mức chạm cạnh trên cùng của board " wrappingWidth="360.6748046875" />
+         </children>
+      </VBox>
+      <Label layoutX="235.0" layoutY="27.0" style="-fx-font-family: Quicksand; -fx-font-weight: bolder;" text="Hướng dẫn">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.9210526347160339" green="0.12792398035526276" blue="0.12792398035526276" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="btnOK" layoutX="263.0" layoutY="334.0" mnemonicParsing="false" onAction="#setBtnOK" style="-fx-background-color: #5B1A1A; -fx-border-color: #B78383; -fx-border-radius: 50;" text="Đóng " textAlignment="CENTER" textFill="#e1cdcd">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
